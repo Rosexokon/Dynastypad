@@ -1,5 +1,5 @@
 import React from 'react'
-import Nearchart from '../components/Nearchart'
+import Nearchart from '../components/Main/Nearchart'
 import Navbar from '../components/Navbar'
 import HomeHero from '../components/Main/HomeHero'
 import PopularCollection from '../components/TopCollection/PopularCollection'
