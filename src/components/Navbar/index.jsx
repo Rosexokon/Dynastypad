@@ -31,8 +31,8 @@ const [connectedAddress, setConnectedAddress] = useState('');
 
   const uauth = new UAuth({
     clientID: "f196fade-1a56-49d3-9bf0-74a50e34674d",
-    redirectUri: "http://localhost:3000",
-    // redirectUri: "https://www.dynastypad.com/",
+    // redirectUri: "http://localhost:3000",
+    redirectUri: "https://www.dynastypad.com/",
     scope: "openid wallet"
   })
 
