@@ -39,7 +39,7 @@ function Navbar() {
     <div className='flex flex-col lg:flex-row items-start lg:items-center space-y-6 lg:space-y-0 lg:space-x-6'>
       {
         navLinks.map(({id,name, link})=> (
-          <Link to={link} key={id} className='font-grotesk font-[500] text-[18px] text-[#04042A]'>{name}</Link>
+          <Link to={link} key={id} className='outline-none font-grotesk font-[500] text-[18px] text-[#04042A]'>{name}</Link>
         ))
       }
     </div>
