@@ -5,17 +5,17 @@ import Logo from "../../assets/images/dynasty.svg";
 import UAuth from "@uauth/js"
 
 
-// const useLocalStorage = (storageKey, fallbackState) => {
-//   const [value, setValue] = useState(
-//     JSON.parse(localStorage.getItem(storageKey)) ?? fallbackState
-//   );
+const useLocalStorage = (storageKey, fallbackState) => {
+  const [connectedUser, setConnectedUser] = useState(
+    localStorage.getItem('user') ?? fallbackState
+  );
   
-//   useEffect(() => {
-//     localStorage.setItem(storageKey, JSON.stringify(value));
-//   }, [value, storageKey]);
+  useEffect(() => {
+    localStorage.setItem(storageKey, connectedUser);
+  }, [connectedUser, storageKey]);
   
-//   return [value, setValue];
-// };
+  return [connectedUser, setConnectedUser];
+};
 
 function Navbar() {
 
@@ -23,8 +23,8 @@ function Navbar() {
 // Connect wallet function
 
 
-const [connectedAddress, setConnectedAddress] = useState('');
-  // const [connectedAddress, setConnectedAddress] = useLocalStorage('user', '');
+// const [connectedAddress, setConnectedAddress] = useState('');
+  const [connectedAddress, setConnectedAddress] = useLocalStorage('user', '');
   
 
 // UAth login function is set here 
