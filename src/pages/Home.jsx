@@ -10,7 +10,7 @@ import HotItemsList from '../components/hotitems/HotItemsList'
 
 function Home() {
   return (
-    <div>
+    <div className='bg-bg-dark text-white'>
         <Navbar/>
         <Nearchart/>
         <HomeHero/>

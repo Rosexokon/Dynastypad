@@ -23,6 +23,11 @@ module.exports = {
         '2xl': '6rem',
       },
     },
+    colors: {
+      'bg-dark': '#1C1E1E',
+      'brand1': '#4176FF',
+      'white': '#FFFFFF',
+    }
   },
   plugins: [],
 }
