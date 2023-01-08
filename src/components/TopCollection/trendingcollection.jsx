@@ -1,5 +1,5 @@
 import React from 'react'
-import { trendingdata } from './trendingdata';
+// import { trendingdata } from './trendingdata';
 
 
 function Trendingcollection({item}) {

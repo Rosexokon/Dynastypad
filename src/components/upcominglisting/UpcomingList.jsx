@@ -1,6 +1,6 @@
 import React from "react";
-import { listData } from "../../data";
-import UpcomingItems from "./UpcomingItems";
+import { listData } from "../data/data";
+import UpcomingItems from ".";
 // import { Link } from "react-router-dom";
 import { Link } from "@reach/router";
 

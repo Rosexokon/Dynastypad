@@ -1,7 +1,7 @@
 import React from "react";
-import { listData } from "../data";
-import UpcomingItems from "../components/UpcomingListing/UpcomingItems";
-import Navbar from "../components/Navbar";
+import { listData } from "../components/data/data";
+import UpcomingItems from "../components/upcominglisting";
+import Navbar from "../components/navbar";
 
 
 

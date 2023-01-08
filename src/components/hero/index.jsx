@@ -1,8 +1,5 @@
 import React from "react";
 import './main.css'
-import { FaArrowDown, FaArrowUp } from "react-icons/fa";
-import greenmark from '../../images/greenmark.svg'
-import redmark from '../../images/redmark.svg'
 import bgcard from '../../assets/images/card.png'
 
 function HomeHero() {

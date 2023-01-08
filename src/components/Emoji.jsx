@@ -1,36 +1,36 @@
-import EmojiReact from 'react-emoji-react';
-import React, { Component } from 'react';
-import { render } from 'react-dom';
- 
+import EmojiReact from "react-emoji-react";
+import React, { Component } from "react";
+import { render } from "react-dom";
+
 const emojis = [
   {
-    name: 'rage',
-    count: 2
+    name: "rage",
+    count: 2,
   },
   {
-    name: 'blush',
-    count: 1
+    name: "blush",
+    count: 1,
   },
   {
     name: 100,
-    count: 3
+    count: 3,
   },
   {
-    name: 'grinning',
-    count: 2
-  }
+    name: "grinning",
+    count: 2,
+  },
 ];
- 
+
 class ReactingComponent extends Component {
   constructor() {
     super();
     this.state = {
-      emojis
+      emojis,
     };
   }
- 
+
   onReaction(name) {
-    const emojis = this.state.emojis.map(emoji => {
+    const emojis = this.state.emojis.map((emoji) => {
       if (emoji.name === name) {
         emoji.count += 1;
       }
@@ -38,24 +38,22 @@ class ReactingComponent extends Component {
     });
     this.setState({ emojis });
   }
- 
+
   onEmojiClick(name) {
     console.log(name);
-    const emojis = this.state.emojis.concat([{name, count: 1}]);
+    const emojis = this.state.emojis.concat([{ name, count: 1 }]);
     this.setState({ emojis });
   }
- 
+
   render() {
     return (
-      <EmojiReact 
-        reactions={this.state.emojis} 
-        onReaction={(name) => this.onReaction(name)} 
+      <EmojiReact
+        reactions={this.state.emojis}
+        onReaction={(name) => this.onReaction(name)}
         onEmojiClick={(name) => this.onEmojiClick(name)}
       />
     );
   }
 }
- 
- 
-render(<ReactingComponent />, document.getElementById('app'));
 
+render(<ReactingComponent />, document.getElementById("app"));

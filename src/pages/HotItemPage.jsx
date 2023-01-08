@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { listData1 } from "../data1";
-import Footer from '../components/Main/Footer'
-import HotItems from '../components/HotItems/HotItems'
-import Navbar from "../components/Navbar";
+import { listData1 } from "../components/data/data1";
+import Footer from '../components/footer'
+import HotItems from '../components/hotitems'
+import Navbar from "../components/navbar";
 
 
 function HotItemPage() {

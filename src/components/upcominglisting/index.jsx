@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import { FaDiscord, FaGlobe,  FaTwitter } from "react-icons/fa";
-// import { Link } from "react-router-dom";
+import React from "react";
 import { Link } from "@reach/router";
 
 

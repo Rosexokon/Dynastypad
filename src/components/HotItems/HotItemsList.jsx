@@ -1,18 +1,17 @@
 import React from "react";
-import { listData1 } from "../../data1";
-import HotItems from "./HotItems";
+import { listData1 } from "../data/data1";
+import HotItems from ".";
 // import { Link } from 'react-router-dom'
 import { Link } from "@reach/router";
 
-
 function HotItemsList() {
-
-
   return (
     <div className="container mb-[40px]">
       <div className="mb-[10px] general-header">
         <h1 className="text-[30px] font-[600] font-[syne]">Hot Items</h1>
-        <Link to='/hotitems'><button className="btn">See all</button></Link>
+        <Link to="/hotitems">
+          <button className="btn">See all</button>
+        </Link>
       </div>
 
       <div className="">

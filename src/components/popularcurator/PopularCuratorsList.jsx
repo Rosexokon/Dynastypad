@@ -1,7 +1,7 @@
 import { Link } from "@reach/router";
 import React from "react";
-import { listData } from "../../data";
-import PopularCurators from "./PopularCurators";
+import { listData } from "../data/data";
+import PopularCurators from ".";
 // import { Link } from 'react-router-dom'
 
 

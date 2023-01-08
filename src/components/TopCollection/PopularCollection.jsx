@@ -1,12 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import axios from 'axios';
-import React, { useState, useEffect } from 'react';
+// import axios from 'axios';
+import React, { useState } from 'react';
 import image from "../../assets/images/image.gif"
 import image1 from "../../assets/images/image1.jpg"
 import image2 from "../../assets/images/image2.png"
 import image3 from "../../assets/images/image3.webp"
-import image4 from "../../assets/images/image4.webp"
-import Pagination from '../Main/pagination';    
+import image4 from "../../assets/images/image4.webp"  
 
 
 const PopularCollection = (props) => {
@@ -227,7 +226,6 @@ const PopularCollection = (props) => {
                     </tbody>
                 </table>
             </div>
-            <Pagination />
         </div>
 
 

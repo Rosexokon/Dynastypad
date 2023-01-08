@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { listData } from "../data";
-import Footer from '../components/Main/Footer'
-import GalleryItems from "../components/TopGallery/Galleryitems";
-import Navbar from "../components/Navbar";
+import Footer from '../components/footer'
+import Navbar from "../components/navbar";
+import { listData } from "../components/data/data";
+import GalleryItems from "../components/topgallery";
 
 
 function TopGalleryPage() {

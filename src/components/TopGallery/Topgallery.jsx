@@ -1,6 +1,6 @@
 import React from "react";
-import { listData } from "../../data";
-import GalleryItems from "./Galleryitems";
+import { listData } from "../data/data";
+import GalleryItems from ".";
 // import { Link } from 'react-router-dom'
 import { Link } from "@reach/router";
 
