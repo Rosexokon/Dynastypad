@@ -35,7 +35,7 @@ function Navbar() {
         isOpen ? <FaTimes onClick={()=> setIsOpen(!isOpen)} className='lg:hidden text-[#4176FF] text-[24px]' /> : <FaBars onClick={()=> setIsOpen(!isOpen)} className='lg:hidden text-[#4176FF] text-[24px]' />
       }
     </div>
-    <div className={`${ isOpen ? 'left-0' : 'left-[-100%] lg:left-0'} fixed top-0 transition-all lg:relative flex flex-col lg:flex-row lg:justify-between items-start lg:items-center w-[70%] lg:w-full bg-gray-50 lg:bg-transparent h-screen lg:h-fit p-[30px_15px] lg:p-0`}>
+    <div className={`${ isOpen ? 'left-0' : 'left-[-100%] lg:left-0'} fixed top-0 transition-all lg:relative flex flex-col lg:flex-row lg:justify-between items-start lg:items-center w-[70%] lg:w-full bg-gray-50 lg:bg-transparent h-screen lg:h-fit p-[30px_15px] lg:p-0 z-20`}>
     <div className='flex flex-col lg:flex-row items-start lg:items-center space-y-6 lg:space-y-0 lg:space-x-6'>
       {
         navLinks.map(({id,name, link})=> (
