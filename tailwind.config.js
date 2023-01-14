@@ -13,6 +13,21 @@ module.exports = {
         '2': '2 2 0%'
       }
     },
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '4rem',
+        xl: '5rem',
+        '2xl': '6rem',
+      },
+    },
+    colors: {
+      'bg-dark': '#1C1E1E',
+      'brand1': '#4176FF',
+      'white': '#FFFFFF',
+    }
   },
   plugins: [],
 }
