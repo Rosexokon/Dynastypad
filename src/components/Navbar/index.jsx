@@ -115,11 +115,9 @@ function Navbar() {
             ))}
           </div>
              {/* Search button */}
-          <div>
-          <div class="relative">
-            <input type="text" id="password" class="w-full pl-3 pr-10 py-2 border-2 border-gray-200 bg-none rounded-xl hover:border-gray-300 focus:outline-none focus:border-blue-500 transition-colors" placeholder="Search..."/>
-            <button class="block w-7 h-7 text-center text-xl leading-0 absolute top-2 right-2 text-white focus:outline-none hover:text-brand1 transition-colors"><FaSearch/></button>
-          </div>
+          <div class="w-[250px] flex items-center justify-between w-full p-[10px_20px] border-[0.7px] text-white border-[#757575] bg-bg-dark rounded-full focus:outline-none">
+            <input type="search" id="" className="bg-bg-dark" placeholder="Search for NFT Collections"/>
+            <button className="block text-center text-xl absolute left-[90%] text-white focus:outline-none hover:text-brand1 transition-colors"><FaSearch/></button>
           </div>
         </div>
         <div className={`${isOpen ? 'z-50 mt-[80px] lg:mt-0 mr-[212px]' : "left-[-100%] lg:block  hidden lg:left-0"} flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-6 force`}>

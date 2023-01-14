@@ -5,7 +5,9 @@ import image from "../../assets/images/image.gif"
 import image1 from "../../assets/images/image1.jpg"
 import image2 from "../../assets/images/image2.png"
 import image3 from "../../assets/images/image3.webp"
-import image4 from "../../assets/images/image4.webp"  
+import image4 from "../../assets/images/image4.webp"
+import { HiLightningBolt } from 'react-icons/hi'
+import { Link } from '@reach/router';
 
 
 const PopularCollection = (props) => {
@@ -35,27 +37,17 @@ const PopularCollection = (props) => {
         setInputText(lowerCase);
     };
 
-    // const filteredData = data.filter((el) => {
-    //     //if no input the return the original
-    //     if (props.input === '') {
-    //         return el;
-    //     }
-    //     //return the item which contains the user input
-    //     else {
-    //         return el.text.toLowerCase().includes(props.input)
-    //     }
-    // })
-
-
-
     return (
 
-        <div className="container mb-[20px]">
-            <div className="mb-[20px] general-header">
-                <h1 className="text-[30px] font-[600] font-[syne]">Trending Collection</h1>
-                <input type="search" name="search" placeholder='search' id="" onChange={inputHandler} />
+        <div className="container mb-[50px] flex flex-col gap-[50px]">
+            <div className="flex items-center gap-[20px] text-[#fff]">
+                <div className='p-[5px] bg-brand2 text-brand3 rounded-[10px] w-[40px] h-[40px] flex  items-center justify-center'>
+                    <HiLightningBolt size='20px' />
+                </div>
+                <h1 className="text-[28px] font-[600]">Trending Collection</h1>
+                {/* <input type="search" name="search" placeholder='search' id="" onChange={inputHandler} /> */}
             </div>
-            <div className='overflow-x-scroll scrollbar-hide'>
+            <div className='scrollbar-hide border rounded-[20px]'>
                 <table className="text-sm font-[grotesk] text-left w-full">
                     <thead className="text-sm font-bold bg-blue-100">
                         <tr>
@@ -209,7 +201,7 @@ const PopularCollection = (props) => {
                             <td className="px-6 py-4 md:inline-flex hidden">111</td>
                             <td className="px-6 py-4 md:inline-flex hidden">10</td>
                         </tr>
-                        <tr className="border-b">
+                        <tr className="">
                             <th scope="row" className="px-6 py-4 font-medium whitespace-nowrap">10.</th>
                             <td className="px-6 py-4">
                                 <div className="flex-shrink-5 flex items-center">
@@ -225,6 +217,13 @@ const PopularCollection = (props) => {
                         </tr>
                     </tbody>
                 </table>
+            </div>
+            <div className='flex self-center'>
+                <Link to='/'>
+                    <div className='mybtn'>
+                        <p >View more collection</p>
+                    </div>
+                </Link>
             </div>
         </div>
 

@@ -27,6 +27,8 @@ module.exports = {
       'bg-dark': '#1C1E1E',
       'brand1': '#4176FF',
       'white': '#FFFFFF',
+      'brand2': 'rgba(32, 99, 242, 0.25)',
+      'brand3': 'rgba(32, 99, 242)',
     }
   },
   plugins: [],
