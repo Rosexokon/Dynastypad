@@ -4,9 +4,10 @@ import Navbar from '../components/navbar'
 import HomeHero from '../components/hero'
 import Footer from '../components/footer'
 import PopularCollection from '../components/topcollection/PopularCollection'
-import TopGallery from '../components/topgallery/Topgallery'
-import PopularCuratorsList from '../components/popularcurator/PopularCuratorsList'
-import HotItemsList from '../components/hotitems/HotItemsList'
+// import TopGallery from '../components/topgallery/Topgallery'
+// import PopularCuratorsList from '../components/popularcurator/PopularCuratorsList'
+// import HotItemsList from '../components/hotitems/HotItemsList'
+import RecentListing from '../components/recentlisting/RecentListing'
 
 function Home() {
   return (
@@ -14,10 +15,11 @@ function Home() {
         <Navbar/>
         <Nearchart/>
         <HomeHero/>
-        <TopGallery/>
+        {/* <TopGallery/> */}
         <PopularCollection/>
-        <HotItemsList/>
-        <PopularCuratorsList/>
+        {/* <HotItemsList/> */}
+        <RecentListing />
+        {/* <PopularCuratorsList/> */}
         <Footer/>
     </div>
   )
