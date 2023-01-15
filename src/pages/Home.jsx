@@ -1,12 +1,12 @@
 import React from 'react'
-import Nearchart from '../components/nearchart'
-import Navbar from '../components/navbar'
-import HomeHero from '../components/hero'
-import Footer from '../components/footer'
-import PopularCollection from '../components/topcollection/PopularCollection'
-import TopGallery from '../components/topgallery/Topgallery'
+import Nearchart from '../components/NearChart/index'
+import Navbar from '../components/Navbar/index'
+import HomeHero from '../components/hero/index'
+import Footer from '../components/Footer/index'
+import PopularCollection from '../components/TopCollection/PopularCollection'
+import TopGallery from '../components/TopGallery/Topgallery'
 import PopularCuratorsList from '../components/popularcurator/PopularCuratorsList'
-import HotItemsList from '../components/hotitems/HotItemsList'
+import HotItemsList from '../components/HotItems/HotItemsList'
 
 function Home() {
   return (

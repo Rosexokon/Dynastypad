@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { listData } from "../components/data/data";
-import Footer from '../components/footer'
-import Navbar from "../components/navbar";
-import PopularCurators from "../components/popularcurator";
+import Footer from '../components/Footer/index'
+import Navbar from "../components/Navbar/index";
+import PopularCurators from "../components/popularcurator/index";
 
 
 function PopularCuratorPage() {
