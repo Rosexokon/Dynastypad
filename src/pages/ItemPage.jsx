@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../components/Navbar/index'
+import Navbar from '../components/navbar'
 // import ItemDetails from '../components/ItemDetails/ItemDetails.jsx'
 
 function ItemPage() {

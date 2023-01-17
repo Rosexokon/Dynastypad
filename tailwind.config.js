@@ -29,6 +29,9 @@ module.exports = {
       'white': '#FFFFFF',
       'brand2': 'rgba(32, 99, 242, 0.25)',
       'brand3': 'rgba(32, 99, 242)',
+      'brand4': '#2063F2',
+      'brand5': 'rgba(255, 115, 174, 0.25)',
+      'brand6': 'rgba(255, 115, 174)',
     }
   },
   plugins: [],

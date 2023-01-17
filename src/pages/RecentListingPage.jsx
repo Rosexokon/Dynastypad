@@ -1,7 +1,7 @@
 import React from "react";
-import ListItem from "../components/RecentListing/index";
+import ListItem from "../components/recentlisting";
 import { listData } from "../components/data/data";
-import Navbar from "../components/Navbar/index";
+import Navbar from "../components/navbar";
 
 function RecentListingPage() {
 

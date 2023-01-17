@@ -28,18 +28,19 @@ const PopularCollection = (props) => {
 
     // if (!data) return null
 
+    // -------------------------
     //Search function
 
-    const [inputText, setInputText] = useState("");
-    let inputHandler = (e) => {
-        //convert input text to lower case
-        var lowerCase = e.target.value.toLowerCase();
-        setInputText(lowerCase);
-    };
+    // const [inputText, setInputText] = useState("");
+    // let inputHandler = (e) => {
+    //     //convert input text to lower case
+    //     var lowerCase = e.target.value.toLowerCase();
+    //     setInputText(lowerCase);
+    // };
 
     return (
 
-        <div className="container mb-[50px] flex flex-col gap-[50px]">
+        <div className="container my-[50px] flex flex-col gap-[50px]">
             <div className="flex items-center gap-[20px] text-[#fff]">
                 <div className='p-[5px] bg-brand2 text-brand3 rounded-[10px] w-[40px] h-[40px] flex  items-center justify-center'>
                     <HiLightningBolt size='20px' />
@@ -74,7 +75,8 @@ const PopularCollection = (props) => {
                             </th>
                         </tr>
                     </thead>
-                    <tbody className="font-[grotesk]" input={inputText}>
+                    {/* <tbody className="font-[grotesk]" input={inputText}> */}
+                    <tbody className="font-[grotesk]">
                         <tr className="border-b">
                             <th scope="row" className="px-6 py-4 font-medium whitespace-nowrap">1.</th>
                             <td className="px-6 py-4">
