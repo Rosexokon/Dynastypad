@@ -7,6 +7,7 @@ import PopularCollection from '../components/TopCollection/PopularCollection'
 import TopGallery from '../components/TopGallery/Topgallery'
 import PopularCuratorsList from '../components/popularcurator/PopularCuratorsList'
 import HotItemsList from '../components/HotItems/HotItemsList'
+import CTA from "../components/CTA/index"
 
 function Home() {
   return (
@@ -18,6 +19,7 @@ function Home() {
         <PopularCollection/>
         <HotItemsList/>
         <PopularCuratorsList/>
+        <CTA/>
         <Footer/>
     </div>
   )
