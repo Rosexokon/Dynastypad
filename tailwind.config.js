@@ -32,6 +32,8 @@ module.exports = {
       'brand4': '#2063F2',
       'brand5': 'rgba(255, 115, 174, 0.25)',
       'brand6': 'rgba(255, 115, 174)',
+      'brand7': 'rgba(164, 49, 255, 0.25)',
+      'brand8': 'rgba(164, 49, 255)',
     }
   },
   plugins: [],

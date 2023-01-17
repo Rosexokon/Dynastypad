@@ -8,19 +8,21 @@ import PopularCollection from '../components/topcollection/PopularCollection'
 // import PopularCuratorsList from '../components/popularcurator/PopularCuratorsList'
 // import HotItemsList from '../components/hotitems/HotItemsList'
 import RecentListing from '../components/recentlisting/RecentListing'
+import FeaturedCollection from '../components/upcominglisting/UpcomingList'
 
 function Home() {
   return (
     <div className='bg-bg-dark text-white'>
-        <Navbar/>
-        <Nearchart/>
-        <HomeHero/>
-        {/* <TopGallery/> */}
-        <PopularCollection/>
-        {/* <HotItemsList/> */}
-        <RecentListing />
-        {/* <PopularCuratorsList/> */}
-        <Footer/>
+      <Navbar />
+      <Nearchart />
+      <HomeHero />
+      {/* <TopGallery/> */}
+      <PopularCollection />
+      {/* <HotItemsList/> */}
+      <FeaturedCollection />
+      <RecentListing />
+      {/* <PopularCuratorsList/> */}
+      <Footer />
     </div>
   )
 }
