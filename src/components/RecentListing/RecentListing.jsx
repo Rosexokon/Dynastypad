@@ -12,7 +12,7 @@ function RecentListing() {
 
 
   return (
-    <div className="container my-[50px]">
+    <div className="container my-[50px] flex flex-col gap-[50px]">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-[20px] text-[#fff]">
           <div className='p-[5px] bg-brand5 text-brand6 rounded-[10px] w-[40px] h-[40px] flex items-center justify-center'>
