@@ -5,13 +5,16 @@ import Logo from "../../assets/images/dynasty.svg";
 
 function Footer() {
   return (
-    <div className="bg-[#f3f3f3] py-8">
-      <div className="container">
+    <div className="bg-black py-8">
+     
         <div className="footer col-12">
-          <img src={Logo} alt="" srcset="" />
+          <a href="https://dynastypad.com/" class="flex items-center mb-4 sm:mb-0">
+            <img src={Logo} class="h-8 mr-3" alt="Dynastypad Logo" />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Dynastypad</span>
+          </a>
           <form action="" method="get">
-            <h2>Sign up for our newsletter so you don't miss any updates.</h2>
-            <div className="footer-item">
+            <h2 className="text-3xl">Sign up for our newsletter so you don't miss any updates.</h2>
+            {/* <div className="footer-item">
               <input
                 type="email"
                 name="email"
@@ -21,7 +24,7 @@ function Footer() {
               <button>
                 <IoIosSend size={24} />
               </button>
-            </div>
+            </div> */}
           </form>
           <div className="footer-icon">
             <FaDiscord size={25} className="mr-4" />
@@ -29,10 +32,10 @@ function Footer() {
             <FaGlobe size={25} className="mr-4" />
           </div>
           <div className="section-comp">
-            <FaCopyright /> <span>Copyright2022, Mintyplex.</span>
+            <FaCopyright /> <span>Built with by <a>Mintyplex</a></span>
           </div>
         </div>
-      </div>
+      
     </div>
   );
 }

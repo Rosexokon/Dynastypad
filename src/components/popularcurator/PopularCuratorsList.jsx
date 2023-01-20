@@ -12,7 +12,7 @@ function PopularCuratorsList() {
     <div className="container mb-[40px]">
       <div className="mb-[10px] general-header">
         <h1 className="text-[30px] font-[600] font-[syne]">Popular Curators</h1>
-        <Link to='/popularcurator'><button className="btn">See all</button></Link>
+        <Link to='/popularcurator'><button className="rounded">See all</button></Link>
       </div>
 
       <div className="">
