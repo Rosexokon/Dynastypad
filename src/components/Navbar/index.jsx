@@ -80,9 +80,9 @@ function Navbar() {
     // },
   ];
   return (
-    <div className="container">
+    <div className="container bg-[#1C1E1E4D]">
       <div className="w-full flex flex-col lg:flex-row items-center justify-between lg:p-[15px_0px] lg:space-x-20 relative text-white">
-        <div className="w-full lg:w-fit flex items-center justify-between lg:justify-start  p-[15px] lg:p-0">
+        <div className="w-full lg:w-fit flex items-center justify-between lg:justify-start  p-[15px_10px] lg:p-0">
           <Link to="/">
             <img src={Logo} alt="logo" className="w-10 h-10" />
           </Link>
@@ -98,7 +98,63 @@ function Navbar() {
             />
           )}
         </div>
-        <div
+
+
+        <div className='hidden  lg:flex items-center space-x-[50px]'>
+            <div>
+              <Link to='/discover' className='font-[500] text-[16px] font-syne'>Discover</Link>
+            </div>
+            <form className='flex items-center space-x-[20px] p-[8px_11px] w-[400px] border bg-[#1C1E1E4D] rounded-[40px] ' >
+              <button type="submit"><FaSearch/></button>
+              <input type="text" className=" outline-none bg-[#1C1E1E4D] w-full placeholder:text-center text-[#BFBFC0] placeholder:text-[#BFBFC0] placeholder:font-syne" placeholder="Search for NFT Collections" />
+            </form>
+            <div>
+              <Link to='/featured' className='font-[500] text-[16px] font-syne  '>Featured</Link>
+            </div>
+        </div>
+
+
+        <div className={`${isOpen? 'left-0': 'left-[-100%]'} fixed bg-[#ffffff]  lg:hidden h-screen flex flex-col space-y-[30px] z-30 w-full p-[20px] transition-all`}>
+          <button onClick={()=> setIsOpen(false)} className='w-full flex items-center justify-end'>
+            <FaTimes className='text-brand1 text-[35px]'/>
+          </button>
+        <div className='flex flex-col space-y-[30px] items-center'>
+            <div>
+              <Link to='/discover' className='font-[500] text-[18px] font-syne text-brand1'>Discover</Link>
+            </div>
+            <form className='hidden lg:flex items-center space-x-[20px] p-[8px_11px] w-[400px] border bg-[#1C1E1E4D] rounded-[40px] ' >
+              <button type="submit"><FaSearch/></button>
+              <input type="text" className=" outline-none bg-[#1C1E1E4D] w-full placeholder:text-center text-[#BFBFC0] placeholder:text-[#BFBFC0] placeholder:font-syne" placeholder="Search for NFT Collections" />
+            </form>
+            <div>
+              <Link to='/featured' className='font-[500] text-[18px] font-syne  text-brand1 '>Featured</Link>
+            </div>
+        </div>
+        <div className='flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-6 force'>
+
+{connectedAddress ? (
+  <button
+    onClick={logout}
+    className="px-[25px] py-[10px] text-white bg-brand1 hover:drop-shadow-md rounded-full flex items-center gap-2"
+  >
+    {connectedAddress.length > 0 &&
+      `${connectedAddress.substring(
+        0,
+        5
+      )}...${connectedAddress.substring(12)}`}
+  </button>
+) : (
+  <button
+    onClick={login}
+    className="px-[25px] py-[10px] text-white bg-brand1 hover:drop-shadow-md rounded-full flex items-center gap-2"
+  >
+    Connect wallet <IoIosWallet />
+  </button>
+)}
+
+</div>
+        </div>
+        {/* <div
           className={`${
             isOpen ? "left-0 z-50 w-[70%] bg-bg-dark" : "left-[-100%] lg:left-0"
           } fixed top-0 transition-all-0.1s lg:relative flex flex-col lg:flex-row lg:justify-between items-start lg:items-center bg-gray-50 lg:bg-transparent h-screen lg:h-fit p-[30px_15px] lg:p-0 force`}
@@ -114,13 +170,15 @@ function Navbar() {
               </Link>
             ))}
           </div>
-             {/* Search button */}
-          <div class="w-[250px] flex items-center justify-between w-full p-[10px_20px] border-[0.7px] text-white border-[#757575] bg-bg-dark rounded-full focus:outline-none">
-            <input type="search" id="" className="bg-bg-dark" placeholder="Search for NFT Collections"/>
-            <button className="block text-center text-xl absolute left-[90%] text-white focus:outline-none hover:text-brand1 transition-colors"><FaSearch/></button>
+          <div>
+          <div class="relative">
+            <input type="text" id="password" class="w-full pl-3 pr-10 py-2 border-2 border-gray-200 bg-none rounded-xl hover:border-gray-300 focus:outline-none focus:border-blue-500 transition-colors" placeholder="Search..."/>
+            <button class="block w-7 h-7 text-center text-xl leading-0 absolute top-2 right-2 text-white focus:outline-none hover:text-brand1 transition-colors"><FaSearch/></button>
           </div>
-        </div>
-        <div className={`${isOpen ? 'z-50 mt-[80px] lg:mt-0 mr-[212px]' : "left-[-100%] lg:block  hidden lg:left-0"} flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-6 force`}>
+          </div>
+        </div> */}
+        <div className='hidden lg:flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-6 force'>
+
             {connectedAddress ? (
               <button
                 onClick={logout}
@@ -140,6 +198,7 @@ function Navbar() {
                 Connect wallet <IoIosWallet />
               </button>
             )}
+
         </div>
       </div>
     </div>
