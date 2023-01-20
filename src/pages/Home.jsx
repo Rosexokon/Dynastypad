@@ -9,6 +9,7 @@ import PopularCollection from '../components/topcollection/PopularCollection'
 // import HotItemsList from '../components/hotitems/HotItemsList'
 import RecentListing from '../components/recentlisting/RecentListing'
 import FeaturedCollection from '../components/upcominglisting/UpcomingList'
+import CTA from '../components/CTA'
 
 function Home() {
   return (
@@ -22,6 +23,7 @@ function Home() {
       <FeaturedCollection />
       <RecentListing />
       {/* <PopularCuratorsList/> */}
+      <CTA />
       <Footer />
     </div>
   )
