@@ -1,15 +1,17 @@
 import React from 'react'
-import Nearchart from '../components/nearchart'
-import Navbar from '../components/navbar'
-import HomeHero from '../components/hero'
-import Footer from '../components/footer'
-import PopularCollection from '../components/topcollection/PopularCollection'
+import Newsletter from '../components/Newsletter/Index'
+import Nearchart from '../components/NearChart/index'
+import Navbar from '../components/Navbar/index'
+import HomeHero from '../components/hero/index'
+import Footer from '../components/Footer/index'
+import PopularCollection from '../components/TopCollection/PopularCollection'
 // import TopGallery from '../components/topgallery/Topgallery'
 // import PopularCuratorsList from '../components/popularcurator/PopularCuratorsList'
 // import HotItemsList from '../components/hotitems/HotItemsList'
-import RecentListing from '../components/recentlisting/RecentListing'
+import RecentListing from '../components/RecentListing/RecentListing'
 import FeaturedCollection from '../components/upcominglisting/UpcomingList'
 import CTA from '../components/CTA'
+
 
 function Home() {
   return (
@@ -24,6 +26,7 @@ function Home() {
       <RecentListing />
       {/* <PopularCuratorsList/> */}
       <CTA />
+      <Newsletter/>
       <Footer />
     </div>
   )

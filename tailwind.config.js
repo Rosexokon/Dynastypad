@@ -37,5 +37,7 @@ module.exports = {
       'brand9': 'rgba(32, 99, 242, 0.2)',
     }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
