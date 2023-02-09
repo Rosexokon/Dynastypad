@@ -11,12 +11,14 @@ import PopularCollection from '../components/TopCollection/PopularCollection'
 import RecentListing from '../components/RecentListing/RecentListing'
 import FeaturedCollection from '../components/upcominglisting/UpcomingList'
 import CTA from '../components/CTA'
+import Cart from '../components/Cart/index'
 
 
 function Home() {
   return (
     <div className='bg-bg-dark text-white'>
       <Navbar />
+      {/* <Cart /> */}
       <Nearchart />
       <HomeHero />
       {/* <TopGallery/> */}
