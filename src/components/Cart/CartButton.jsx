@@ -30,7 +30,7 @@ const CartButton = ({ itemsInCart }) => {
 const CartSlideOver = ({ itemsInCart, onClose }) => {
   return (
     <div
-      className="fixed top-0 right-0 h-full rounded-lg w-64 bg-white text-brand1 shadow-lg py-4 px-6 overflow-y-auto"
+      className="fixed top-0 right-0 h-[480px] rounded-lg w-[320px] bg-white text-brand1 mr-4 mb-12 shadow-lg py-2 px-6 overflow-y-auto"
       style={{ transform: "translateY(50%)" }}
     >
 

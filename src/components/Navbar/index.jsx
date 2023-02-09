@@ -5,6 +5,8 @@ import Logo from "../../assets/images/dynasty.svg";
 import UAuth from "@uauth/js";
 import { IoIosWallet } from "react-icons/io";
 import CartButton from "../Cart/CartButton";
+import CollectionFilter from "./Search";
+
 
 const useLocalStorage = (storageKey, fallbackState) => {
   const [connectedUser, setConnectedUser] = useState(
@@ -109,6 +111,7 @@ function Navbar() {
             <button type="submit"><FaSearch /></button>
             <input type="text" className=" outline-none bg-[#1C1E1E4D] w-full placeholder:text-center text-[#BFBFC0] placeholder:text-[#BFBFC0] placeholder:font-syne" placeholder="Search for NFT Collections" />
           </form>
+          
           <div>
             <Link to='/featured' className='font-[500] text-[16px] font-syne  '>Featured</Link>
           </div>
@@ -116,6 +119,7 @@ function Navbar() {
 
 
         <div className={`${isOpen ? 'left-0' : 'left-[-100%]'} fixed bg-[#ffffff]  lg:hidden h-screen flex flex-col space-y-[30px] z-30 w-full p-[20px] transition-all`}>
+          
           <button onClick={() => setIsOpen(false)} className='w-full flex items-center justify-end'>
             <FaTimes className='text-brand1 text-[35px]' />
           </button>
@@ -123,10 +127,7 @@ function Navbar() {
             <div>
               <Link to='/discover' className='font-[500] text-[18px] font-syne text-brand1'>Discover</Link>
             </div>
-            <form className='hidden lg:flex items-center space-x-[20px] p-[8px_11px] w-[400px] border bg-[#1C1E1E4D] rounded-[40px] ' >
-              <button type="submit"><FaSearch /></button>
-              <input type="text" className=" outline-none bg-[#1C1E1E4D] w-full placeholder:text-center text-[#BFBFC0] placeholder:text-[#BFBFC0] placeholder:font-syne" placeholder="Search for NFT Collections" />
-            </form>
+            
             <div>
               <Link to='/featured' className='font-[500] text-[18px] font-syne  text-brand1 '>Featured</Link>
             </div>
@@ -173,14 +174,14 @@ function Navbar() {
             ))}
           </div>
           <div>
-          <div class="relative">
-            <input type="text" id="password" class="w-full pl-3 pr-10 py-2 border-2 border-gray-200 bg-none rounded-xl hover:border-gray-300 focus:outline-none focus:border-blue-500 transition-colors" placeholder="Search..."/>
-            <button class="block w-7 h-7 text-center text-xl leading-0 absolute top-2 right-2 text-white focus:outline-none hover:text-brand1 transition-colors"><FaSearch/></button>
+          <div className="relative">
+            <input type="text" id="password" className="w-full pl-3 pr-10 py-2 border-2 border-gray-200 bg-none rounded-xl hover:border-gray-300 focus:outline-none focus:border-blue-500 transition-colors" placeholder="Search..."/>
+            <button className="block w-7 h-7 text-center text-xl leading-0 absolute top-2 right-2 text-white focus:outline-none hover:text-brand1 transition-colors"><FaSearch/></button>
           </div>
           </div>
         </div> */}
         <div className='hidden lg:flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-6 force'>
-          <CartButton />
+        <CartButton />
           {connectedAddress ? (
             <button
               onClick={logout}
